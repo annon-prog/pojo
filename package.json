@@ -1,0 +1,18 @@
+{
+  "name": "pojo",
+  "version": "1.0.0",
+  "description": "It's time to get some practice using Objects! Below we've included a link to download a `zip` file for a number of problems.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.2.0"
+  }
+}

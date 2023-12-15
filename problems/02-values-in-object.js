@@ -15,7 +15,8 @@ valuesInObject(foods); // => ["tart", "sour", "sweet"]
 ***********************************************************************/
 
 function valuesInObject(obj) {
-  // Your code here
+ let values = Object.values(obj);
+ return values;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

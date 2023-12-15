@@ -20,7 +20,13 @@ keyInObjectArray(objArray, 'animal'); // => false
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  // Your code here
+  for(let i = 0; i < objArray.length; i++){
+    let object = objArray[i];
+    if(keyString in object){
+      return true;
+    }
+  }
+  return false;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

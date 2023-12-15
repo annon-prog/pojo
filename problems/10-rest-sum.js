@@ -9,8 +9,12 @@ restSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 45
 restSum(0); // => 0
 ***********************************************************************/
 
+
 function restSum(...otherNums) {
-  // Your code here
+ let restSummation = otherNums.reduce(function(accum, element){
+  return accum + element;
+ });
+ return restSummation;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
