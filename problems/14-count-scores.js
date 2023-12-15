@@ -6,6 +6,8 @@ return an object that has key-value pairs listing each person who scored as a ke
 and the sum of the total points for the game as their value.
 
 
+ 
+
 Example 1:
 let ppl = [{name: "Anthony", score: 10},
             {name: "Fred", score : 10},
@@ -28,7 +30,18 @@ console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 ***********************************************************************/
 
 function countScores(people) {
-  // Your code here
+  let newObject = {};
+
+  people.forEach(function(person){
+    let {name, score} = person;
+    if(name in newObject){
+      newObject[name] += score;
+    }else{
+      newObject[name] = score;
+    }
+  });
+
+  return newObject;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
